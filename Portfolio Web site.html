@@ -3,10 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <title>Portfolio - NAVEEN KUMAR N</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  
+  <!-- AOS Animation Library -->
+  <link rel="stylesheet" href="/ /stylesheet.css">
   </head>
 <body>
-  <!-- Navbar -->
   <header>
     <h1>My Portfolio</h1>
     <nav>
@@ -18,59 +23,70 @@
       </ul>
     </nav>
   </header>
-
-  <!-- Home -->
-  <section id="home">
-    <img src="https://via.placeholder.com/160" alt="Profile">
+  <section id="home" data-aos="fade-up">
+    <img src="/ /IMG_20250628_231159.jpg" alt="Profile Photo">
     <h2>NAVEEN KUMAR N</h2>
-    <p>Hi! I'm a passionate developer who enjoys building beautiful and functional websites. This portfolio highlights my skills and projects.</p>
+    <p>Web Developer | Python Programmer | Data Science Enthusiast</p>
+    <p></p>
   </section>
 
   <!-- Skills -->
-  <section id="skills">
+  <section id="skills" data-aos="fade-right">
     <h2>Skills</h2>
-    <div class="skills-list">
-      <div class="skill">HTML</div>
-      <div class="skill">CSS</div>
-      <div class="skill">JavaScript</div>
-      <div class="skill">Python</div>
-      <div class="skill">NOSQL</div>
-      <div class="skill">SQL</div>
+    <div class="skills">
+      <div class="skill-box">HTML</div>
+      <div class="skill-box">CSS</div>
+      <div class="skill-box">JavaScript</div>
+      <div class="skill-box">Python</div>
+      <div class="skill-box">Data Science</div>
+      <div class="skill-box">Machine Learning</div>
     </div>
   </section>
 
   <!-- Projects -->
-  <section id="projects">
+  <section id="projects" data-aos="zoom-in">
     <h2>Projects</h2>
     <div class="projects">
-      <div class="project">
-        <h3>Portfolio Website</h3>
-        <p>A responsive and animated personal portfolio site.</p>
-        <a href="https://github.com/" target="_blank">View on GitHub</a>
+      <div class="project-card">
+        <h3>Project 1</h3>
+        <h3>AI-Based Project</h3>
+        <p>
+Designed and implemented a project leveraging AI techniques for real-world problem-solving. Applied data preprocessing, model building, and performance evaluation to achieve accurate and efficient results.
+Implemented machine learning algorithms and data visualization to improve accuracy and usability.
+Tools used: Python, Pandas, Scikit-learn, Tableau.
+
+</p>
+        <a href="https://github.com/Naveenkumar130506/Portfolio-Website.git"target="_blank">GitHub Link</a>
       </div>
-      <div class="project">
-        <h3>Machine Learning Model</h3>
-        <p>A Python project predicting house prices using ML algorithms.</p>
-        <a href="https://github.com/" target="_blank">View on GitHub</a>
+      <div class="project-card">
+        <h3>Project 2</h3>
+    <h3>Portfolio Websites </h3>  
+        <p>✨ A modern, responsive portfolio website showcasing my professional profile, skills, and projects. Designed with smooth animations, clean layouts, and mobile-friendly features to create an engaging experience for visitors.
+</p>
+        <a href="https://github.com/Naveenkumar130506/Portfolio-Website.git"target="_blank">GitHub Link</a>
       </div>
     </div>
   </section>
 
   <!-- Contact -->
-  <section id="contact">
+  <section id="contact" data-aos="fade-left">
     <h2>Contact Me</h2>
     <form>
       <input type="text" placeholder="Your Name" required>
       <input type="email" placeholder="Your Email" required>
-      <textarea rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
     </form>
   </section>
 
-  <!-- Footer -->
   <footer>
-    <p>© 2025 Your Name | All Rights Reserved</p>
+    <p>© 2025 Naveen Kumar. All rights reserved.</p>
   </footer>
 
+  <!-- Animation Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({duration:1000, once:true});
+  </script>
 </body>
 </html>
